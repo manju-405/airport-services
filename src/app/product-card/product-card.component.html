@@ -1,0 +1,15 @@
+<div class="cards">
+    <h6>{{cardsTitle}}</h6>
+    <ul>
+        <li *ngFor="let card of cardsData" (click)="onClick(card)">
+            <img src="assets/{{card.imgName}}" alt="">
+            <div class="card-details">
+                <p>{{card?.imgTitle}}</p>
+                <div class="d-flex-justify-content">
+                    <a href="">Explore</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
